@@ -38,6 +38,7 @@ body {
 }
 
 .bottom {
+  color: #dd4145;
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -61,14 +62,34 @@ body {
   font-size: 1.3em;
   margin-bottom: 4em;
 }
-
-/* button {
-  clip-path: circle(20% at 0% 0%);
-  transition-property: clip-path;
-  transition-duration: 2s;
-  transition-timing-function: linear;
+.button {
+  margin-top: 1.2rem;
+  border-radius: 2rem;
+  clip-path: circle(20% at 0 0);
+  transition: all 1s;
+}
+.button:hover {
+  clip-path: circle(75%);
 }
 
-button:hover {
-  clip-path: circle(75%);
-} */
+/* media screen */
+
+@media screen and (max-width: 600px) {
+  .lower {
+    position: absolute;
+    top: 73%;
+  }
+  .heading {
+    width: 100%;
+    margin-left: 0;
+  }
+  .button {
+    margin-top: 2rem;
+    border-radius: 2rem;
+    clip-path: circle(50% at 0 0);
+    transition: all 1s ease-in-out;
+  }
+  .button:hover {
+    clip-path: circle(75%);
+  }
+}

@@ -71,3 +71,22 @@ svg {
 .up {
   margin-top: 12em;
 }
+
+.shape {
+  display: none;
+}
+
+/* media screen */
+@media screen and (max-width: 600px) {
+  .wave {
+    display: none;
+  }
+  .shape {
+    display: block;
+    position: relative;
+    top: 17vh;
+  }
+  button {
+    margin-top: 5rem;
+  }
+}
