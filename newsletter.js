@@ -9,7 +9,7 @@ const app = express();
 
 // app use
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+
 
 // app get home
 app.get("/", function (req, res) {
